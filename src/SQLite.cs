@@ -4091,7 +4091,7 @@ namespace SQLite
 			Serialized = 3
 		}
 
-		const string LibraryPath = "sqlite3";
+		const string LibraryPath = "e_sqlite3.dll"; // "sqlite3";
 
 #if !USE_CSHARP_SQLITE && !USE_WP8_NATIVE_SQLITE && !USE_SQLITEPCL_RAW
 		[DllImport(LibraryPath, EntryPoint = "sqlite3_threadsafe", CallingConvention=CallingConvention.Cdecl)]
